@@ -1,5 +1,4 @@
 def mergeSort(alist):
-    print("Splitting ",alist)
     if len(alist)>1:
         mid = len(alist)//2
         lefthalf = alist[:mid]
@@ -29,20 +28,19 @@ def mergeSort(alist):
             alist[k]=righthalf[j]
             j=j+1
             k=k+1
-    print("Merging ",alist)
+
+def missing_int(lst):
+    j=0; flag=0;
+    for i in range(len(lst)):
+        if(lst[i]>0):
+            j+=1;
+            if(lst[i] != j):
+                print(j)
+                flag = 1
+                break
+    if (flag==0):
+        print(lst[-1]+1)
 
 lista = [1,2,0]
 mergeSort(lista)
-print(lista)
-
-#Done with sorting, We need to find the first missing positive integer now
-j=0; flag=0;
-for i in range(len(lista)):
-    if(lista[i]>0):
-        j+=1;
-        if(lista[i] != j):
-            print(j)
-            flag = 1
-            break
-if (flag==0):
-    print(lista[-1]+1)
+missing_int(lista)
