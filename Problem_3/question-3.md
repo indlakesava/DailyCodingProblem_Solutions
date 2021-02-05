@@ -12,4 +12,4 @@ The following test should pass:
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 
-(Solution)[]
+[Solution](https://github.com/indlakesava/DailyCodingProblem_Solutions/blob/main/Problem_3/solution-3.py)
