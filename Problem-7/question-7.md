@@ -4,4 +4,4 @@ For example, the message '111' would give 3, since it could be decoded as 'aaa',
 
 You can assume that the messages are decodable. For example, '001' is not allowed.
 
-[Solution]()
+[Solution](https://github.com/indlakesava/DailyCodingProblem_Solutions/blob/main/Problem-7/solution-7.py)
